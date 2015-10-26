@@ -83,10 +83,22 @@ console.log(backPack);
 
   //Code Here
 
+var me = {
+	name: 'Michael Hantho',
+	age: 27,
+	height: "6'1",
+	gender: "Male",
+	married: false,
+	eyeColor: "blue",
+	hairColor: "brown"
+}
+
 //Now, loop through your object and alert every value. *Tyler --> 24 --> 6'0 --> Male, etc etc
 
   //Code Here
-
+for (x in me) {
+	alert(me[x]);
+}
 
 
 
@@ -99,11 +111,21 @@ console.log(backPack);
 
   //Code Here
 
+var album = {
+	lonelyLove: "3:15",
+	aBetterMan: "3:30",
+	howdy: "2:14",
+	byeFelicia: "0:30",
+	sob: "4:00"
+}
+
 //Now, loop through your album object alerting every song title individually.
 
   //Code Here
 
-
+for (var prop in album) {
+	alert(prop);
+}
 
 
 //NEXT PROBLEM
