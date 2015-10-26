@@ -211,10 +211,13 @@ var user = {
 
   //Code Here
 
+user.name = 'Tyler S. McGinnis';
+user.email = 'tyler.mcginnis@devmounta.in';
+
 //Now call the sayName method that's on the user object which will alert the users email
 
   //Code Here
-
+user.sayName();
 
 
 
@@ -227,17 +230,26 @@ var user = {
 
   //Code Here
 
+var methodCollection = {};
+
+
 /*Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. */
 
   //Code Here
 
+methodCollection.alertHello = function() {
+	alert('hello');
+}
+methodCollection.logHello = function() {
+	console.log('hello');
+}
 //Now call your alertHello and logHello methods.
 
   //Code Here
-
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 //NEXT PROBLEM
 
@@ -246,7 +258,13 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called MakePerson which takes in name, birthday, ssn as its parameters and returns a new object with all of the information that you passed in.
 
   //Code Here
-
+function MakePerson(name, bd, ssn) {
+	var newObj = {};
+	newObj.name = name;
+	newObj.bd = bd;
+	newObj.ssn = ssn;
+	return newObj;
+}
 
 
 //NEXT PROBLEM
@@ -256,7 +274,14 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called MakeCard which takes in all the data it needs to make a Credit Card object and returns that object so that whenever you invoke MakeCard, you get a brand new credit card.
 
   //Code Here
-  
+function MakeCard(cardNumber, name, exp, svc) {
+	var newCard = {};
+	newCard.cardNumber = cardNumber;
+	newCard.name = name;
+	newCard.exp = exp;
+	newCard.svc = svc;
+	return newCard;
+}
   
   
 //NEXT PROBLEM
@@ -269,5 +294,12 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 */
 
   //Code Here
+
+function bindCard(person, creditcard) {
+	for (prop in person) {
+		if person
+	}
+}
+
 
 
