@@ -294,11 +294,27 @@ function MakeCard(cardNumber, name, exp, svc) {
 */
 
   //Code Here
+/*var person = {
+	name: "Michael Hantho",
+	age: 72
+}
+var creditcard = {
+	cardNumber: "12647935678",
+	exp: "04/14",
+	svc 373,
+	name: "Michael Hantho"
+}*/ //Testing purposes
+
 
 function bindCard(person, creditcard) {
+	var newObj = {};
 	for (prop in person) {
-		if person
+		newObj[prop] = person[prop];
 	}
+	for (x in creditcard) {
+		newObj[x] = creditcard[x];
+	}
+	return newObj;
 }
 
 
